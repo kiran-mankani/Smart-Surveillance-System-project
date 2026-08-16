@@ -1,0 +1,382 @@
+/* ===========================
+   Google Font & Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#08111f url("../images/bg.png") no-repeat center center fixed;
+
+    background-size:cover;
+
+    color:#fff;
+
+    overflow-x:hidden;
+
+}
+
+/* Dark Overlay */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    z-index:-1;
+
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+.navbar{
+
+    background:rgba(5,15,30,.55);
+
+    backdrop-filter:blur(12px);
+
+    padding:16px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.logo{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.navbar-brand{
+
+    color:#fff !important;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.nav-link{
+
+    color:#ddd !important;
+
+    margin-left:18px;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#00d4ff !important;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn-login{
+
+    border:2px solid #00d4ff;
+
+    color:white;
+
+    border-radius:30px;
+
+    padding:10px 28px;
+
+}
+
+.btn-login:hover{
+
+    background:#00d4ff;
+
+    color:#000;
+
+}
+
+.btn-register{
+
+    background:linear-gradient(90deg,#00d4ff,#4f46e5);
+
+    color:#fff;
+
+    border-radius:30px;
+
+    padding:10px 28px;
+
+}
+
+.btn-register:hover{
+
+    transform:translateY(-3px);
+
+    color:white;
+
+}
+
+.btn-main{
+
+    background:linear-gradient(90deg,#00d4ff,#4f46e5);
+
+    color:white;
+
+    border-radius:35px;
+
+    padding:14px 38px;
+
+    font-weight:600;
+
+}
+
+.btn-main:hover{
+
+    color:white;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:100px;
+}
+
+.hero-tag{
+    display:inline-block;
+    background:rgba(0,212,255,.15);
+    color:#00d4ff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:15px;
+    margin-bottom:20px;
+    border:1px solid rgba(0,212,255,.35);
+}
+
+.hero-title{
+    font-size:60px;
+    font-weight:700;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-title span{
+    color:#00d4ff;
+}
+
+.hero-text{
+    font-size:18px;
+    color:#d6d6d6;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-img{
+    width:100%;
+    max-width:520px;
+    animation:floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-18px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.features{
+
+    padding:100px 0;
+
+}
+
+.section-title{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.section-text{
+
+    color:#cfcfcf;
+
+    font-size:18px;
+
+}
+
+.feature-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    height:100%;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 30px rgba(0,212,255,.35);
+
+}
+
+.feature-icon{
+
+    font-size:48px;
+
+    margin-bottom:18px;
+
+}
+
+.feature-card h4{
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#d4d4d4;
+
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+
+    padding:90px 0;
+
+}
+
+.about-text{
+
+    width:75%;
+
+    margin:auto;
+
+    color:#d6d6d6;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#050b14;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#aaa;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:991px){
+
+.hero{
+
+    text-align:center;
+
+}
+
+.hero-title{
+
+    font-size:42px;
+
+}
+
+.hero-img{
+
+    margin-top:50px;
+
+}
+
+.about-text{
+
+    width:100%;
+
+}
+
+.navbar .btn{
+
+    margin-top:10px;
+
+    width:100%;
+
+}
+
+}

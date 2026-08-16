@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | Smart Surveillance</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+</head>
+
+<body>
+
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+    <h2>🎥 Surveillance</h2>
+
+    <ul>
+
+        <li>
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+
+        <li>
+            <a href="history.html">History</a>
+        </li>
+
+        <li class="active">
+            <a href="profile.html">Profile</a>
+        </li>
+
+        <li>
+            <a href="settings.html">Settings</a>
+        </li>
+
+        <li id="logoutBtn">
+            Logout
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- ================= MAIN ================= -->
+
+<div class="main">
+
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <h1>My Profile</h1>
+
+        <div class="user">
+            Welcome, User 👋
+        </div>
+
+    </div>
+
+
+    <!-- PROFILE -->
+
+    <div class="prediction-box">
+
+    <h2>Account Information</h2>
+
+    <table class="result-table">
+
+        <tr>
+            <th>Name</th>
+            <td id="profileName">Loading...</td>
+        </tr>
+
+        <tr>
+            <th>Email</th>
+            <td id="profileEmail">Loading...</td>
+        </tr>
+
+        <tr>
+            <th>Account Status</th>
+            <td id="profileStatus">Loading...</td>
+        </tr>
+
+        <tr>
+            <th>Role</th>
+            <td id="profileRole">Loading...</td>
+        </tr>
+
+    </table>
+
+</div>
+
+
+    <!-- PROFILE MESSAGE -->
+
+    
+    
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="../js/toast.js"></script>
+<script src="../js/profile.js"></script>
+</body>
+
+</html>

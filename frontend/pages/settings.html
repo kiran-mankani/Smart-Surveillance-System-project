@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | Smart Surveillance</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+</head>
+
+<body>
+
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+    <h2>🎥 Surveillance</h2>
+
+    <ul>
+
+        <li>
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+
+        <li>
+            <a href="history.html">History</a>
+        </li>
+
+        <li>
+            <a href="profile.html">Profile</a>
+        </li>
+
+        <li class="active">
+            <a href="settings.html">Settings</a>
+        </li>
+
+        <li id="logoutBtn">
+            Logout
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- ================= MAIN ================= -->
+
+<div class="main">
+
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <h1>Settings</h1>
+
+        <div class="user">
+            Welcome, User 👋
+        </div>
+
+    </div>
+
+
+    <!-- ACCOUNT SETTINGS -->
+
+    <div class="upload-box">
+
+        <h2>Account Settings</h2>
+
+
+        <div style="margin-bottom:20px;">
+
+            <label>
+                <strong>Email Notifications</strong>
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="emailNotifications"
+                checked
+            >
+
+            <span>
+                Enable email notifications
+            </span>
+
+        </div>
+
+
+        <div style="margin-bottom:20px;">
+
+            <label>
+                <strong>Prediction Notifications</strong>
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="predictionNotifications"
+                checked
+            >
+
+            <span>
+                Show prediction notifications
+            </span>
+
+        </div>
+
+
+        <button
+            id="saveSettings"
+            type="button"
+        >
+            Save Settings
+        </button>
+
+
+        <p id="settingsMessage"></p>
+
+    </div>
+
+
+    <!-- SYSTEM SETTINGS -->
+
+    <div class="prediction-box">
+
+        <h2>System Information</h2>
+
+        <table class="result-table">
+
+            <tr>
+
+                <th>System</th>
+
+                <td>
+                    Smart Surveillance
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>AI Model</th>
+
+                <td>
+                    CNN + LSTM
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>Prediction</th>
+
+                <td>
+                    Enabled
+                </td>
+
+            </tr>
+
+
+            <tr>
+
+                <th>Version</th>
+
+                <td>
+                    1.0
+                </td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+<!-- ================= SETTINGS JS ================= -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        const saveButton =
+            document.getElementById(
+                "saveSettings"
+            );
+
+
+        if (saveButton) {
+
+            saveButton.addEventListener(
+                "click",
+                function () {
+
+                    const email =
+                        document.getElementById(
+                            "emailNotifications"
+                        ).checked;
+
+
+                    const prediction =
+                        document.getElementById(
+                            "predictionNotifications"
+                        ).checked;
+
+
+                    localStorage.setItem(
+                        "emailNotifications",
+                        email
+                    );
+
+
+                    localStorage.setItem(
+                        "predictionNotifications",
+                        prediction
+                    );
+
+
+                    document.getElementById(
+                        "settingsMessage"
+                    ).textContent =
+                        "Settings saved successfully.";
+
+                }
+            );
+
+        }
+
+    }
+);
+
+</script>
+
+
+<!-- DASHBOARD JS FOR LOGOUT -->
+
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="../js/toast.js"></script>
+<script src="../js/dashboard.js"></script>
+
+
+</body>
+
+</html>

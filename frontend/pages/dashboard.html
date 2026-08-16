@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Smart Surveillance</title>
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+     SIDEBAR
+===================================================== -->
+
+    <div class="sidebar">
+
+        <h2>
+            🎥 Surveillance
+        </h2>
+
+        <ul>
+
+            <!-- Dashboard -->
+            <li class="active">
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+            </li>
+
+
+            <!-- History -->
+            <li>
+                <a href="history.html">
+                    History
+                </a>
+            </li>
+
+
+            <!-- Profile -->
+            <li>
+                <a href="profile.html">
+                    Profile
+                </a>
+            </li>
+
+
+            <!-- Settings -->
+            <li>
+                <a href="settings.html">
+                    Settings
+                </a>
+            </li>
+
+
+            <!-- Logout -->
+            <li id="logoutBtn">
+                Logout
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+    <div class="main">
+
+
+        <!-- =================================================
+         HEADER
+    ================================================== -->
+
+        <div class="header">
+
+            <h1>
+                Dashboard
+            </h1>
+
+            <div class="user">
+                Welcome, User 👋
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+         DASHBOARD CARDS
+    ================================================== -->
+
+        <div class="cards">
+
+
+            <!-- TOTAL VIDEOS -->
+
+            <div class="card">
+
+                <h2 id="totalVideos">
+                    0
+                </h2>
+
+                <p>
+                    Total Videos
+                </p>
+
+            </div>
+
+
+            <!-- TOTAL PREDICTIONS -->
+
+            <div class="card">
+
+                <h2 id="totalPredictions">
+                    0
+                </h2>
+
+                <p>
+                    Predictions
+                </p>
+
+            </div>
+
+
+            <!-- ACCURACY -->
+
+            <div class="card">
+
+                <h2 id="accuracy">
+                    --
+                </h2>
+
+                <p>
+                    Accuracy
+                </p>
+
+            </div>
+
+
+            <!-- TODAY'S UPLOADS -->
+
+            <div class="card">
+
+                <h2 id="todayUploads">
+                    0
+                </h2>
+
+                <p>
+                    Today's Uploads
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+         UPLOAD VIDEO
+    ================================================== -->
+
+        <div class="upload-box">
+
+            <h2>
+                Upload Surveillance Video
+            </h2>
+
+
+            <p>
+            <p>
+                Select a CCTV video for ML-based activity prediction.
+            </p>
+            </p>
+
+
+            <input type="file" id="videoFile" accept="video/*">
+
+
+            <br>
+            <br>
+
+
+            <!-- ONLY ONE UPLOAD BUTTON -->
+
+            <button id="uploadBtn" type="button">
+                Upload & Predict
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================================
+         PREDICTION RESULT
+    ================================================== -->
+
+        <div class="prediction-box">
+
+            <h2>
+                Prediction Result
+            </h2>
+
+
+            <table class="result-table">
+
+
+                <!-- VIDEO NAME -->
+
+                <tr>
+
+                    <th>
+                        Video Name
+                    </th>
+
+                    <td id="videoName">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <!-- PREDICTED ACTIVITY -->
+
+                <tr>
+
+                    <th>
+                        Predicted Activity
+                    </th>
+
+                    <td id="prediction">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <!-- CONFIDENCE -->
+
+                <tr>
+
+                    <th>
+                        Confidence
+                    </th>
+
+                    <td id="confidence">
+                        -
+                    </td>
+
+                </tr>
+
+
+                <!-- STATUS -->
+
+                <tr>
+
+                    <th>
+                        Status
+                    </th>
+
+                    <td id="status">
+                        Waiting...
+                    </td>
+
+                </tr>
+
+
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+     DASHBOARD JAVASCRIPT
+===================================================== -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../js/toast.js"></script>
+    <script src="../js/dashboard.js"></script>
+
+
+</body>
+
+</html>

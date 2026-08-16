@@ -1,0 +1,76 @@
+                    precision    recall  f1-score   support
+
+    ApplyEyeMakeup     1.0000    0.9444    0.9714        18
+     ApplyLipstick     0.9565    1.0000    0.9778        22
+      BabyCrawling     1.0000    0.9130    0.9545        23
+       BalanceBeam     1.0000    0.8750    0.9333        16
+     BaseballPitch     0.9583    0.9583    0.9583        24
+        Basketball     0.8889    0.8421    0.8649        19
+    BasketballDunk     0.9444    1.0000    0.9714        17
+        BenchPress     0.9583    1.0000    0.9787        23
+            Biking     1.0000    1.0000    1.0000        17
+         Billiards     1.0000    1.0000    1.0000        28
+  BodyWeightSquats     0.9565    0.9167    0.9362        24
+ BoxingPunchingBag     0.9677    1.0000    0.9836        30
+      BreastStroke     0.9545    1.0000    0.9767        21
+     BrushingTeeth     1.0000    0.9444    0.9714        18
+       CliffDiving     0.9333    0.8235    0.8750        17
+    CricketBowling     0.9565    1.0000    0.9778        22
+  CuttingInKitchen     1.0000    0.9545    0.9767        22
+          Drumming     1.0000    1.0000    1.0000        21
+FieldHockeyPenalty     0.8095    1.0000    0.8947        17
+   FloorGymnastics     0.8636    1.0000    0.9268        19
+      FrisbeeCatch     0.9474    0.9474    0.9474        19
+         Hammering     0.9412    1.0000    0.9697        16
+  HandstandWalking     0.9524    0.9524    0.9524        21
+       HeadMassage     0.9545    0.9545    0.9545        22
+       HorseRiding     0.9545    0.9545    0.9545        22
+          HulaHoop     1.0000    0.9000    0.9474        20
+        IceDancing     1.0000    1.0000    1.0000        16
+      JavelinThrow     0.8947    0.8947    0.8947        19
+     JugglingBalls     1.0000    1.0000    1.0000        19
+          JumpRope     1.0000    1.0000    1.0000        16
+       JumpingJack     0.9630    1.0000    0.9811        26
+          Kayaking     1.0000    0.9474    0.9730        19
+          Knitting     1.0000    1.0000    1.0000        16
+            Lunges     0.8889    0.8421    0.8649        19
+            Mixing     1.0000    1.0000    1.0000        16
+      MoppingFloor     0.8750    1.0000    0.9333        21
+      ParallelBars     0.9565    0.9565    0.9565        23
+      PlayingCello     1.0000    1.0000    1.0000        22
+      PlayingTabla     1.0000    1.0000    1.0000        19
+       PommelHorse     1.0000    1.0000    1.0000        22
+           PullUps     0.9375    1.0000    0.9677        15
+           PushUps     0.9048    1.0000    0.9500        19
+           Rafting     1.0000    1.0000    1.0000        21
+RockClimbingIndoor     1.0000    1.0000    1.0000        18
+      RopeClimbing     0.8889    0.8889    0.8889        18
+            Rowing     1.0000    0.9130    0.9545        23
+         SalsaSpin     1.0000    1.0000    1.0000        17
+      ShavingBeard     1.0000    0.9048    0.9500        21
+           Shotput     0.8095    0.8947    0.8500        19
+     SkateBoarding     0.9200    0.8519    0.8846        27
+            Skiing     0.8261    1.0000    0.9048        19
+            Skijet     0.9048    1.0000    0.9500        19
+         SkyDiving     1.0000    1.0000    1.0000        17
+    SoccerJuggling     0.8889    1.0000    0.9412        16
+     SoccerPenalty     1.0000    1.0000    1.0000        14
+        StillRings     1.0000    0.9000    0.9474        20
+     SumoWrestling     1.0000    1.0000    1.0000        23
+           Surfing     1.0000    1.0000    1.0000        23
+             Swing     0.8571    1.0000    0.9231        12
+   TableTennisShot     1.0000    0.9200    0.9583        25
+            TaiChi     0.9167    1.0000    0.9565        22
+       TennisSwing     1.0000    1.0000    1.0000        13
+       ThrowDiscus     1.0000    0.6111    0.7586        18
+ TrampolineJumping     1.0000    1.0000    1.0000        23
+            Typing     1.0000    1.0000    1.0000        21
+ VolleyballSpiking     0.9524    1.0000    0.9756        20
+    WalkingWithDog     1.0000    0.7778    0.8750        18
+       WallPushups     1.0000    1.0000    1.0000        23
+    WritingOnBoard     1.0000    1.0000    1.0000        21
+              YoYo     1.0000    1.0000    1.0000        24
+
+          accuracy                         0.9600      1400
+         macro avg     0.9612    0.9598    0.9585      1400
+      weighted avg     0.9626    0.9600    0.9595      1400

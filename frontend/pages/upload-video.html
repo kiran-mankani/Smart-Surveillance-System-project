@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Video | Smart Surveillance</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <h2>🎥 Surveillance</h2>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">Dashboard</a>
+            </li>
+
+            <li>
+                <a href="history.html">History</a>
+            </li>
+
+            <li>
+                <a href="profile.html">Profile</a>
+            </li>
+
+            <li>
+                <a href="settings.html">Settings</a>
+            </li>
+
+            <li id="logoutBtn">
+                Logout
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="main">
+
+        <div class="header">
+
+            <h1>Upload Video</h1>
+
+            <div class="user">
+                Welcome, User 👋
+            </div>
+
+        </div>
+
+
+        <div class="upload-box">
+
+            <h2>Upload Surveillance Video</h2>
+
+            <p>
+                Select a CCTV video for AI-based activity prediction.
+            </p>
+
+            <input
+                type="file"
+                id="videoFile"
+                accept="video/*">
+
+            <br><br>
+
+            <button type="button" id="uploadBtn">
+                Upload & Predict
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

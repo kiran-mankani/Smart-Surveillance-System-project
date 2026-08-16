@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Surveillance System</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+</head>
+
+<body>
+
+<!--================ NAVBAR ================-->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand d-flex align-items-center" href="#">
+
+<img src="../images/logo.png" alt="Logo" class="logo">
+
+<span class="ms-2">
+
+Smart Surveillance
+
+</span>
+
+</a>
+
+<button class="navbar-toggler"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#navbarNav">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse"
+
+id="navbarNav">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+
+<a class="nav-link active"
+
+href="#">
+
+Home
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+
+href="#features">
+
+Features
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+
+href="#about">
+
+About
+
+</a>
+
+</li>
+
+</ul>
+
+<a href="login.html"
+
+class="btn btn-login ms-lg-3">
+
+Login
+
+</a>
+
+<a href="register.html"
+
+class="btn btn-register ms-2">
+
+Register
+
+</a>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center min-vh-100">
+
+            <!-- Left Side -->
+
+            <div class="col-lg-6">
+
+                
+                
+
+                <h1 class="hero-title">
+                    Smart Surveillance
+                    <span>Activity Recognition</span>
+                    System
+                </h1>
+
+                <p class="hero-text">
+
+                    Detect human activities from surveillance videos using
+                    CNN + LSTM Deep Learning technology with high accuracy,
+                    fast processing and intelligent prediction.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="register.html" class="btn btn-main">
+
+                        Get Started
+
+                    </a>
+
+                    <a href="login.html" class="btn btn-outline-light ms-3">
+
+                        Login
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="col-lg-6 text-center">
+
+                <img src="../images/hero.png"
+                     class="hero-img img-fluid"
+                     alt="AI Surveillance">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features" id="features">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">
+                System Features
+            </h2>
+
+            <p class="section-text">
+                Modern AI powered surveillance with secure authentication
+                and intelligent activity recognition.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🤖</div>
+
+                    <h4>ML Detection</h4>
+
+                    <p>
+                        CNN + LSTM based human activity recognition.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🔐</div>
+
+                    <h4>Secure Access</h4>
+
+                    <p>
+                        Login, Register, OTP verification and password recovery.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">⚡</div>
+
+                    <h4>Fast Prediction</h4>
+
+                    <p>
+                        Quick activity recognition with confidence score.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">📊</div>
+
+                    <h4>Detailed Results</h4>
+
+                    <p>
+                        View predictions and activity analysis instantly.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="container text-center">
+
+        <h2 class="section-title">
+            About the Project
+        </h2>
+
+        <p class="about-text">
+
+            Smart Surveillance System is a surveillance video analysis system developed using a CNN + LSTM deep learning model to recognize human activities from surveillance videos. The system provides secure authentication, activity prediction, and an easy-to-use dashboard for video analysis.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 Smart Surveillance System | Developed by Kiran
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="../js/toast.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction | Smart Surveillance</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="sidebar">
+
+        <h2>🎥 Surveillance</h2>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">Dashboard</a>
+            </li>
+
+            <li>
+                <a href="upload-video.html">Upload Video</a>
+            </li>
+
+            <li class="active">
+                <a href="prediction.html">Prediction</a>
+            </li>
+
+            <li>
+                <a href="history.html">History</a>
+            </li>
+
+            <li>
+                <a href="profile.html">Profile</a>
+            </li>
+
+            <li>
+                <a href="settings.html">Settings</a>
+            </li>
+
+            <li id="logoutBtn">
+                Logout
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <div class="main">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <h1>Prediction</h1>
+
+            <div class="user">
+                Welcome, User 👋
+            </div>
+
+        </div>
+
+
+        <!-- ================= RESULT ================= -->
+
+        <div class="prediction-box">
+
+            <h2>Prediction Result</h2>
+
+            <table class="result-table">
+
+                <tr>
+
+                    <th>
+                        Video Name
+                    </th>
+
+                    <td id="videoName">
+                        -
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <th>
+                        Predicted Activity
+                    </th>
+
+                    <td id="prediction">
+                        -
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <th>
+                        Confidence
+                    </th>
+
+                    <td id="confidence">
+                        -
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <th>
+                        Status
+                    </th>
+
+                    <td id="status">
+                        Waiting...
+                    </td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../js/toast.js"></script>
+    <script src="../js/prediction.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datasets / large files
+dataset/
+datasets/
+*.avi
+*.mp4
+*.mov
+*.mkv
+
+# Extracted frames
+extracted_frames/
+frames/
+
+# ML models / checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# IDE
+.vscode/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

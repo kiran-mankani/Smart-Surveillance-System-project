@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:url("../images/bg.png") no-repeat center center fixed;
+    background-size:cover;
+    min-height:100vh;
+
+}
+
+.overlay{
+
+    background:rgba(0,0,0,.65);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+
+}
+
+.login-card{
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:20px;
+    padding:40px;
+    color:white;
+    box-shadow:0 0 35px rgba(0,212,255,.25);
+
+}
+
+.logo{
+
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+
+}
+
+.login-card h2{
+
+    font-weight:700;
+
+}
+
+.login-card p{
+
+    color:#d5d5d5;
+
+}
+
+label{
+
+    margin-bottom:8px;
+    display:block;
+    font-weight:500;
+
+}
+
+.form-control{
+
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    color:white;
+    height:50px;
+
+}
+
+.form-control::placeholder{
+
+    color:#cfcfcf;
+
+}
+
+.form-control:focus{
+
+    background:rgba(255,255,255,.12);
+    color:white;
+    border-color:#00d4ff;
+    box-shadow:none;
+
+}
+
+.btn-eye{
+
+    background:#00d4ff;
+    color:black;
+    border:none;
+}
+
+.btn-eye:hover{
+
+    background:#00b8df;
+
+}
+
+.login-btn{
+
+    background:linear-gradient(90deg,#00d4ff,#4f46e5);
+    border:none;
+    color:white;
+    height:50px;
+    border-radius:30px;
+    font-weight:600;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-2px);
+    color:white;
+
+}
+
+.forgot{
+
+    color:#00d4ff;
+    text-decoration:none;
+
+}
+
+.forgot:hover{
+
+    text-decoration:underline;
+
+}
+
+a{
+
+    color:#00d4ff;
+    text-decoration:none;
+
+}
+
+a:hover{
+
+    color:#4f46e5;
+
+}
+
+@media(max-width:768px){
+
+.login-card{
+
+    padding:25px;
+
+}
+
+}
